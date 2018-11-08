@@ -122,3 +122,11 @@ $ vagrant ssh trusty64.vagrant.dev
 [grafana]:      http://grafana.org              "Grafana"
 [license]:      https://github.com/ansiblebit/grafana/blob/master/LICENSE  "BSD license"
 [steenzout]:    https://github.com/steenzout/   "Pedro Salgado"
+
+## UPDATE from Navent
+
+There was some troubles using this role. After ran it, the service 'grafana-server.service' was not starting. Searching over the internet we found that in '/etc/default/grafana-server' must have the following line 'PID_FILE_DIR=/run/grafana'. The rol was updated for this prupose. 
+
+More about this issue in: https://github.com/grafana/grafana/issues/10143
+
+Thanks for watching! :)
